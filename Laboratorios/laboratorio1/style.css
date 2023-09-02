@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.bgrojo{
+    background-color: red;
+}
+.bgverde{
+    background-color: green;
+}
+.bgazul{
+    background-color: blue;
+}
+.bgamarillo{
+    background-color: yellow;
+}
+.bgnaranja{
+    background-color: orange;
+}
+.arriba{
+    display: flex;
+    width: 700px;
+}
+.arr1{
+    width: 350px;
+    border: 1px solid gray;
+}
+.arr2{
+    width: 350px;
+    border: 1px solid gray;
+}
+.medio{
+    display: flex; 
+    width: 700px;
+}
+.med1{
+    width: 100px;
+    border: 1px solid gray;
+}
+.med2{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid gray;
+}
+.med3{
+    width: 100px;
+    border: 1px solid gray;
+}
+.abajo{
+    width: 700px;
+    border: 1px solid gray;
+}
+table{
+    display: flex;
+    justify-content: center;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+table{
+    border-collapse: collapse;
+}
+td{
+    border: 1px solid black;
+}
+
