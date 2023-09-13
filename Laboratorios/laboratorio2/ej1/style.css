@@ -1,0 +1,15 @@
+*{
+    margin: 10px 100px;
+}
+.amarillo{
+    padding: 10px;
+    background-color: yellow;
+}
+.gris{
+    padding: 30px 1px;
+    background-color: gray;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
