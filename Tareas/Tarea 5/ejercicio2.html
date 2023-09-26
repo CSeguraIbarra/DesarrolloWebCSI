@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+</head>
+<body>
+    <script>
+        /*2.   Realzar
+        un programa en javascript que permita calcular el factorial de un numero
+        introducido mediante promps, utilizar funciones*/
+        n=prompt("Introducir nro");
+        n=parseInt(n);
+        function factorial(n){
+            var aux=1;
+            for(i=1;i<=n;i++){
+                aux*=i;
+            }
+            return aux;
+        }
+        document.write(factorial(n));
+    </script>
+</body>
+</html>

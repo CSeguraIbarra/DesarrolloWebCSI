@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+</head>
+<body>
+    <script>
+        /*3.   número
+        entero y devuelve como resultado una cadena de texto que indica si el número es
+        par o impar. Mostrar por pantalla el resultado devuelto por la función.*/
+        n=prompt("Introducir nro entero");
+        n=parseInt(n);
+        function paroimpar(n){
+            var aux="";
+            if(n%2==0){
+                a="es par";
+            }else {
+                a="es impar";
+            }
+            return a;
+        }
+        document.write(paroimpar(n));
+    </script>
+</body>
+</html>
