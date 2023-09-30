@@ -1,0 +1,21 @@
+.ventana{
+    margin: auto;
+    width: 500px;
+    border: 1px solid  #F79646;
+    height: 150px;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;  
+}
+.ventana select{
+    border: 1px solid  #F79646;
+    background-color: white;
+}
+.ventana input{
+    border: 1px  solid #F79646;
+}
+.button{
+    border: 1px solid #b66d31;
+    background-color: #F79646;
+    color: white;
+}
