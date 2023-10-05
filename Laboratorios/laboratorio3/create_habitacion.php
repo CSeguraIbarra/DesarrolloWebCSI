@@ -3,8 +3,8 @@ include("conexion.php");
 $nro=$_POST['nro'];
 $bano_privado=$_POST['bano_privado'];
 $espacio=$_POST['espacio'];
-$precio=$_POST['precio']
-$id_tipo_habitacion=$_POST['apellidos'];
+$precio=$_POST['precio'];
+$id_tipo_habitacion=$_POST['id_tipo_habitacion'];
 
 $sql="INSERT INTO habitacion(nro,id_tipo_habitacion,bano_privado,espacio,precio) values
  ($nro, $id_tipo_habitacion,$bano_privado,$espacio,$precio) ";
@@ -17,6 +17,6 @@ $sql="INSERT INTO habitacion(nro,id_tipo_habitacion,bano_privado,espacio,precio)
 }
 $con->close()
 ?>
-<meta http-equiv="refresh" content="3; url=read_habitaciones.php" />
+<meta http-equiv="refresh" content="3; url=read_habitacion.php" />
 
 

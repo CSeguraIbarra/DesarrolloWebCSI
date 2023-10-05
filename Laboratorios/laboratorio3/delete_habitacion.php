@@ -12,6 +12,6 @@ $sql="DELETE FROM habitacion WHERE id=$id";
 }
 $con->close()
 ?>
-<meta http-equiv="refresh" content="3; url=read_habitaciones.php" />
+<meta http-equiv="refresh" content="3; url=read_habitacion.php" />
 
 

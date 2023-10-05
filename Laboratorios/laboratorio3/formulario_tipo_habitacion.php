@@ -8,23 +8,16 @@
 </head>
 
 <body>
-    <?php include("conexion.php");
-    $id=$_GET['id'];
-    $sql="SELECT descripcion from tipo_habitacion where id=$id";
-    $resultado=$con->query($sql);
-    $row = $resultado->fetch_assoc();
-    
-    ?>
     <form action="create.php" method="post">
 
         <div>
             <label for="descripcion">Descripcion</label>
-            <input type="text" name="descripcion" value="<?php echo $row['descipcion']?>">
+            <input type="text" name="descripcion" >
             <label for="numero_camas">numero camas</label>
-            <input type="number" name="numero_camas" value="<?php echo $row['numero_camas']?>">
+            <input type="number" name="numero_camas">
         </div>
         <input type="hidden" name="id" value="<?php echo $id?>">
-        <input type="submit" value="Editar">
+        <input type="submit" value="Enviar">
 
 
     </form>
