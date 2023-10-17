@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="n">n</label>
+    <input type="number" id="n">
+    <button onclick="llenar()">Llenar</button>
+    <div id="elementos"></div>
+    <script>
+        function llenar(){
+
+        let n=parseInt(document.getElementById("n").value);
+        elementos=document.getElementById('elementos');
+        for(i=1;i<=n;i++){
+        elementos.innerHTML+=`<label for="numeros">Numero ${i}</label><input type="number" name="numeros"><span id="numero${i}"></span> <br>`
+        }
+        elementos.innerHTML+=`<button onclick="calcularMayor()">Calcular mayor</button>`
+        }
+
+        function calcularMayor(){
+            var numeros=document.getElementsByName("numeros");
+            let mayor=numeros[0];
+            let idNumeroMayor="numero1";
+            //inicializar todos en su color normal en caso de que se cambien y actualicen los datos
+            for(i=0;i<numeros.length;i++){
+                numeros[i].style.color="black";
+                numeros[i].style.backgroundColor="white";
+                document.getElementById(`numero${i+1}`).textContent="";
+            }
+            for(i=1;i<numeros.length;i++){
+                valorMayor=parseInt(mayor.value);
+                valorComparar=parseInt(numeros[i].value);
+                if(valorComparar>valorMayor){ 
+                    mayor=numeros[i];
+                    valorMayor=valorComparar;
+                    idNumeroMayor=`numero${i+1}`;
+                }
+            }
+            mayor.style.color="yellow";
+            mayor.style.backgroundColor="black";
+            document.getElementById(`${idNumeroMayor}`).textContent="Mayor";
+        }
+    </script>
+</body>
+</html>
