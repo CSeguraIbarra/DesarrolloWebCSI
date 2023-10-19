@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_teclado.css">
+</head>
+<body>
+    <div class="todo">
+    <div class="password">
+    <label for="password">Password:</label>
+    <input type="password" id="password">
+    <button onclick="mostrar()" id="mostrar">Mostrar</button>
+    </div>
+    <br>
+    <div class="teclado">
+        <table>
+            <tr>
+                <td onclick="llenar(1)" id="numero1">1</td>
+                <td onclick="llenar(2)" id="numero2">2</td>
+                <td onclick="llenar(3)" id="numero3">3</td>
+            </tr>
+            <tr>
+                <td onclick="llenar(4)" id="numero4">4</td>
+                <td onclick="llenar(5)" id="numero5">5</td>
+                <td onclick="llenar(6)" id="numero6">6</td>
+            </tr>
+            <tr>
+                <td onclick="llenar(7)" id="numero7">7</td>
+                <td onclick="llenar(8)" id="numero8">8</td>
+                <td onclick="llenar(9)" id="numero9">9</td>
+            </tr>
+            <tr>
+                <td onclick="llenar('*')" id="asterisco">*</td>
+                <td onclick="llenar(0)" id="numero0">0</td>
+                <td onclick="limpiar()">Limpiar</td>
+            </tr>
+        </table>
+        <script>
+            function limpiar(){
+                document.getElementById('password').value="";
+            }
+            function mostrar(){
+                if(document.getElementById('mostrar').textContent=="Mostrar"){
+                document.getElementById('password').type="Text";
+                document.getElementById('mostrar').textContent="Ocultar";   
+                }else {
+                document.getElementById('password').type="password";   
+                document.getElementById('mostrar').textContent="Mostrar"; 
+                }
+            }
+            function llenar(numero){
+                document.getElementById('password').value+=numero;
+            }
+        </script>
+    </div>
+    </div>
+</body>
+</html>
