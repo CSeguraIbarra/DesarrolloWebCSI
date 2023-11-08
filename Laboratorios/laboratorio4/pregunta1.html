@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<body>
+    <button onclick="mostrar()">Mostrar</button>
+    <div>
+        <table id="lista" border="1"></table>
+    </div>
+    <script src="lista.php"></script>
+    <script>
+        function mostrar(){
+            console.log(json);
+            var lista = document.getElementById("lista");
+            var html = "";
+            html = `
+                            <tr>
+                            <th>Nro</th>
+                            <th>Apellidos Nombres</th>
+                            <th>Edad</th>
+                            <th>Materia</th>
+                            <th>Not</th>   
+                            </tr>`;
+            //foreach( )  
+            lista.innerHTML=html;
+        } 
+    </script>
+</body>
+</html>

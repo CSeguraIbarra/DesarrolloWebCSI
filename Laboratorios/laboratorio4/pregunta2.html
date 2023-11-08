@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <img id="imagen" src="images/miciudad.jpeg" alt="sucre"  >
+    </div>
+    <div>
+        <input type="number" id="numero">
+        <button onclick="agrandar()">Agrandar</button>
+        <button onclick="reducir()">Reducir</button>
+    </div>
+    <script>
+        function agrandar(){
+            var numero=parseInt(document.getElementById("numero").value);
+            var imagen=document.getElementById("imagen");
+            imagen.width += numero;  
+        }
+        function reducir(){
+            var numero=parseInt(document.getElementById("numero").value);
+            var imagen=document.getElementById("imagen");
+            imagen.width -= numero;  
+        }
+    </script>
+</body>
+</html>
