@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #todo {
+            border: 1px solid black;
+        }
+
+        #tabla {
+            padding: 5px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        #resultado {
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="todo">
+        <div id="tabla">
+            <div>
+                <label for="numero">Tabla del</label>
+                <input type="number" id="numero" min="1" max="10">
+            </div>
+            <div>
+                <input type="radio" name="operacion" value="+">Suma<br>
+                <input type="radio" name="operacion" value="-">Resta<br>
+            </div>
+            <div>
+                <input type="radio" name="operacion" value="*">Multiplicacion<br>
+                <input type="radio" name="operacion" value="/">Division<br>
+            </div>
+            <div>
+                <label for="numerolimite">&nbsp;&nbsp;&nbsp;Hasta el</label>
+                <input type="number" id="numerolimite" min="1">
+            </div>
+            <div>
+                <button onclick="javascript:generarTabla()">Tabla</button>
+            </div>
+        </div>
+        <div id="resultado">
+
+        </div>
+    </div>
+  
+</body>
+</html>
