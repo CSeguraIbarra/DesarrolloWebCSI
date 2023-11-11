@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="ajax.js"></script>
+    <script src="fetch.js"></script>
+    <style>
+        .todo{
+            border: 1px solid black;
+            width: 100%;
+        }
+        #menu{
+            border: 1px solid black;
+            background-color: #ffff00;
+            height: 30px;
+            padding: 3px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #titulo{
+            border: 1px solid black;
+            height: 50px;
+            background-color: #ffc000;
+            text-align: center;
+        }
+        #principal{
+            padding: 4px;
+            border: 1px solid black;
+            height: auto;
+            padding: 5px;
+        }
+        #historial{
+            border: 1px solid black;
+            height: auto;
+            background-color: #ffc000;
+            padding: 5px;
+        }
+        #botonmenu{
+            background-color: #c00000;
+            color: white;
+            border: 1px solid black;
+            padding: 4px;
+        }
+        #botones{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="todo">
+        <div id="menu">
+            <div id="botones"></div> &nbsp;
+            <div>
+                <button id="botonmenu" onclick="javascript:cargarContenidoBtn('botones.html')">Menu</button>
+            </div>
+        </div>
+        <div id="titulo">
+
+        </div>
+        <div id="principal">
+
+        </div>
+        <div id="historial">
+
+        </div>
+    </div>
+    <script>
+        var titulo=document.getElementById('titulo');
+        titulo.innerHTML="<div>Nombre: Cristhian Segura Ibarra</div><div>CU: 35-5100</div>";
+    </script>
+</body>
+</html>

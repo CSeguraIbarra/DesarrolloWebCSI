@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form {
+            padding: 2px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        #form1 {
+            width: 30%;
+            padding: 2px;
+            border: 1px solid black;
+        }
+
+        #form2 {
+            width: 70%;
+            padding: 2px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <div id="form1">
+            <form action="javascript:sumar()" method="get" enctype="multipart/form-data" id="form_n">
+                <div>
+                    <label for="n">n</label>
+                    <input type="number" name="n">
+                </div>
+                <div>
+                    <input type="submit" value="Obtener">
+                </div>
+            </form>
+        </div>
+        <div id="form2"></div>
+    </div>
+</body>
+
+</html>
