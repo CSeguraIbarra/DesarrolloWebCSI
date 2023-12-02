@@ -4,8 +4,8 @@
     padding: 20px;
 }
 .content{
-    border: 1px solid black;
     display: flex;
+    
 }
 #pie{
     border: 1px solid black;
@@ -40,6 +40,7 @@
 }
 #contenido{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 10px;
 }
@@ -99,4 +100,30 @@
 }
 .fotografia{
     padding: 1px 6px;
+}
+/*pregunta2*/
+.cantidad input{
+    width: 80px;
+}
+
+/*listar*/
+.header{
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #002060;
+    color:white;
+    padding: 4px;
+}
+.content1{
+    border: 1px solid black;
+    background-color: #d9e2f3;
+    padding: 4px;
+}
+.table1{
+    border-collapse: collapse;
+    text-align: center;
+}
+.enlacetitulo{
+    text-decoration: none;
+    color: white;   
 }
